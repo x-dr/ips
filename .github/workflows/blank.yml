@@ -1,22 +1,14 @@
-# This is a basic workflow to help you get started with Actions
+name: 'GitHub Actions '
 
-name: CI
-
-# Controls when the workflow will run
 on:
   push:
     branches: 
       - main
   schedule:
-   - cron: '8 * * * *'
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+   - cron: '10 * * * *'
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  runs-on:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
