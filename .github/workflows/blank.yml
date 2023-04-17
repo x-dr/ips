@@ -36,6 +36,7 @@ jobs:
         run: |
           echo "rm *txt"
           rm -rf *.txt
+          echo $(date +%Y%m%d%H%M%S) > README.MD
           echo "下载tgip"
           curl https://zip.baipiao.eu.org -o tgip.zip
           unzip tgip.zip -d ./
